@@ -1864,12 +1864,13 @@ img {
 }
 
 .landing-text-main h1 {
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(2.5rem, 11vw, 8rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 2rem;
   color: #fff;
+  word-wrap: break-word;
 }
 
 .landing-text-main .accent {
@@ -1878,7 +1879,8 @@ img {
 
 .landing-text-wrapper {
   position: relative;
-  width: max-content;
+  width: 100%;
+  max-width: max-content;
 }
 
 .landing-sub-desc {
