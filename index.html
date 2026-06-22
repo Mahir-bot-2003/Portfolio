@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahir Makar</title>
+  <meta name="description"
+    content="Portfolio of Mahir Makar - ML Engineer, Computer Vision Engineer, and Full-Stack App Developer. Building intelligent systems from whiteboard to deployment." />
+  <meta name="keywords"
+    content="Mahir Makar, ML Engineer, Computer Vision, Full-Stack Developer, Portfolio, Machine Learning, AI" />
+  <meta name="author" content="Mahir Makar" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="navbar" class="navbar">
+    <a href="#landing" class="nav-logo">MM</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════ LANDING ═══════════════ -->
+  <section id="landing" class="section landing-section">
+    <canvas id="particleCanvas" class="landing-particles-canvas"></canvas>
+
+    <div class="landing-watermark">01</div>
+
+    <div class="container landing-content-new">
+      <div class="landing-text-main reveal-up">
+        <div class="landing-text-wrapper">
+          <h1>Future forward<br>
+            <span class="accent">creative</span><br>
+            engineer.
+          </h1>
+          <p class="landing-sub-desc">
+            blending machine learning expertise<br>
+            with engineering clarity to build<br>
+            systems that stand out, move fast, and<br>
+            stay unforgettable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-footer">
+      <div class="landing-location">
+        Based in Jaipur, building globally.
+      </div>
+      <div class="landing-scroll-info">
+        I Deconstruct, Rebuild, and Engineer Your Ideas
+        <div class="scroll-icon-simple"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ME ═══════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">About <span class="accent">Me</span></h2>
+      <div class="section-line reveal-up"></div>
+      <div class="about-content">
+        <div class="about-summary reveal-up">
+          <p>
+            I'm a B.Tech Computer Science student at Government Engineering College, Jaipur (CGPA: 8.90) with a strong
+            interest in Machine Learning, Artificial Intelligence, and Software Development.
+            <br><br>
+            I enjoy building end-to-end AI applications that combine machine learning models, backend systems, and
+            user-facing products. My experience includes developing fraud detection systems using LightGBM and XGBoost,
+            creating AI-powered meeting intelligence platforms with speech recognition and LLM integrations, and
+            building cross-platform mobile applications using Flutter.
+            <br><br>
+            Currently, I'm focused on Deep Learning, Computer Vision, NLP, and building real-world AI products that
+            solve practical problems.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card reveal-up" style="animation-delay: 0.1s;">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3>Mission</h3>
+            <p>To engineer intelligent systems that solve high-stakes real-world problems — making machine learning not
+              just accurate, but reliable, scalable, and deployable in production environments.</p>
+          </div>
+          <div class="about-card reveal-up" style="animation-delay: 0.2s;">
+            <div class="about-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3>Vision</h3>
+            <p>To become a leading ML/AI engineer who bridges the gap between research and production, building systems
+              that create measurable impact at scale across fraud prevention, computer vision, and language
+              intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Work <span class="accent">Experience</span></h2>
+      <div class="section-line reveal-up"></div>
+      <div class="timeline">
+        <!-- ROLE 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge">Full-time Internship</span>
+              <span class="timeline-date">June 2026 – Present</span>
+            </div>
+            <h3 class="timeline-title">Machine Learning Intern</h3>
+            <h4 class="timeline-company">Sun Shine Automation India Limited (SSAIL)</h4>
+            <p class="timeline-location">📍 Jaipur, Rajasthan, India · On-site</p>
+            <div class="timeline-details">
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Developed a real-time PPE detection system using YOLOv8, identifying safety helmets and gloves at
+                  30+ FPS via live webcam feeds.</li>
+                <li>Solved model degradation (catastrophic forgetting) by implementing an ensemble architecture that
+                  runs multiple neural networks simultaneously to merge predictions.</li>
+                <li>Programmed custom object tracking using Intersection over Union (IoU) and temporal smoothing to
+                  filter webcam noise and stabilise bounding boxes.</li>
+                <li>Managed the full data pipeline — converting, merging, and normalising XML and YOLO datasets for
+                  PyTorch model training on an RTX 4050 GPU.</li>
+              </ul>
+              <h5>Key Achievements</h5>
+              <ul class="achievements-list">
+                <li>Achieved 30+ FPS real-time inference on live webcam feeds, meeting production deployment
+                  requirements for on-site industrial safety monitoring.</li>
+                <li>Resolved catastrophic forgetting via ensemble fusion, significantly improving multi-class detection
+                  stability across varying lighting and occlusion conditions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROLE 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge">Internship</span>
+              <span class="timeline-date">June 2025 – July 2025</span>
+            </div>
+            <h3 class="timeline-title">Android App Development Intern</h3>
+            <h4 class="timeline-company">Centre for Electronic Governance (CEG)</h4>
+            <p class="timeline-location">📍 Jaipur, Rajasthan</p>
+            <div class="timeline-details">
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Developed responsive cross-platform Android applications using Flutter and Dart with adaptive UI
+                  components for multiple screen sizes.</li>
+                <li>Designed and integrated end-to-end app workflows ensuring seamless user experience across all device
+                  form factors.</li>
+                <li>Collaborated on backend integrations, state management, and performance optimisation for real-time
+                  application features.</li>
+              </ul>
+              <h5>Key Achievements</h5>
+              <ul class="achievements-list">
+                <li>Delivered production-ready Flutter applications deployed within a government digital services
+                  initiative serving citizens across Rajasthan.</li>
+                <li>Optimised real-time feature performance, reducing UI lag and improving app responsiveness across
+                  low-end Android devices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROLE 3 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge">Industrial Training</span>
+              <span class="timeline-date">July 2024 (1 month)</span>
+            </div>
+            <h3 class="timeline-title">Industrial Trainee — Machine Learning & IoT</h3>
+            <h4 class="timeline-company">MIIC, MNIT Jaipur</h4>
+            <p class="timeline-location">📍 Jaipur, Rajasthan</p>
+            <div class="timeline-details">
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Completed industry-focused training in ML and IoT with hands-on exposure to predictive analytics on
+                  real industrial datasets.</li>
+                <li>Worked on data preprocessing, feature engineering, and deployment-oriented ML pipelines for
+                  industrial use cases.</li>
+              </ul>
+              <h5>Key Achievements</h5>
+              <ul class="achievements-list">
+                <li>Applied ML techniques to real sensor data, producing deployment-ready predictive models for
+                  industrial monitoring scenarios.</li>
+                <li>Gained practical exposure to end-to-end ML workflows in an industrial research environment at one of
+                  India's premier NIT institutions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">My <span class="accent">Projects</span></h2>
+      <div class="section-line reveal-up"></div>
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <div class="project-card reveal-up" style="animation-delay: 0.1s;">
+          <div class="project-card-top">
+            <div class="project-type-badge">Computer Vision / MLOps / Full-Stack AI</div>
+            <a href="https://github.com/Mahir-bot-2003/EdgeHelmet-AI" target="_blank" rel="noopener"
+              class="project-github-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-title">EdgeSafety-AI — Real-Time PPE & Safety Detection System</h3>
+          <p class="project-desc">A production-oriented PPE compliance monitoring system built on a 3-model YOLOv8
+            ensemble with a 14-class unified detection registry. The system identifies helmets, gloves, vests, goggles,
+            masks, and hazardous events in real time at 30+ FPS via live webcam feeds, with a FastAPI web dashboard for
+            live streaming and static image analysis.</p>
+          <ul class="project-outcomes">
+            <li>Engineered a 3-model ensemble with custom cross-model IoU/IoM NMS filter to resolve overlapping
+              detections across all 14 classes.</li>
+            <li>Achieved 94.3% mAP@50 (helmet) and 94.1% mAP@50 (glove) after 100-epoch AdamW training on RTX 4050.</li>
+            <li>Implemented 30-frame temporal smoothing buffer with IoU-based tracking to eliminate label flickering.
+            </li>
+            <li>Built complete FastAPI web dashboard with real-time MJPEG streaming, dynamic PPE target isolation, live
+              detection stats, and interactive training metric charts.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>YOLOv8</span><span>PyTorch</span><span>FastAPI</span><span>OpenCV</span><span>CUDA</span><span>Chart.js</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card reveal-up" style="animation-delay: 0.2s;">
+          <div class="project-card-top">
+            <div class="project-type-badge">Machine Learning / Fraud Detection</div>
+            <a href="https://github.com/MAHIR-BOT-2003" target="_blank" rel="noopener" class="project-github-link"
+              aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-title">ML Mule Account Detection System</h3>
+          <p class="project-desc">A high-accuracy fraud detection pipeline built on large-scale financial datasets,
+            targeting mule account classification. The system combines advanced feature engineering with an ensemble of
+            gradient boosting models to achieve near-production AUC scores.</p>
+          <ul class="project-outcomes">
+            <li>Engineered 180+ behavioural and transactional features from raw financial data using custom
+              preprocessing pipelines.</li>
+            <li>Developed a LightGBM and XGBoost ensemble achieving 0.983 AUC — near-perfect for binary fraud
+              classification.</li>
+            <li>Built a modular pipeline supporting feature selection, model training, and threshold-optimised
+              inference.</li>
+            <li>Recognised in the National Fraud Prevention Challenge (NFPC) for the approach.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>LightGBM</span><span>XGBoost</span><span>Scikit-learn</span><span>Pandas</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card reveal-up" style="animation-delay: 0.3s;">
+          <div class="project-card-top">
+            <div class="project-type-badge">AI / NLP / Backend</div>
+            <a href="https://github.com/dimension-drifter/samwaadai" target="_blank" rel="noopener"
+              class="project-github-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-title">Samwaad AI — Meeting Intelligence Platform</h3>
+          <p class="project-desc">A real-time AI platform that transforms raw meeting audio into structured intelligence
+            — transcription, summarisation, sentiment analysis, and action-item extraction — with automated post-meeting
+            workflows integrated into Google Calendar and email.</p>
+          <ul class="project-outcomes">
+            <li>Integrated Google Speech-to-Text and Gemini AI for accurate speaker diarization and contextual meeting
+              summarisation.</li>
+            <li>Automated post-meeting workflows via Google Calendar and SendGrid, eliminating manual follow-up effort.
+            </li>
+            <li>Built scalable backend APIs and real-time processing workflows for concurrent meeting intelligence
+              sessions.</li>
+            <li>Designed a system for extracting structured action items and sentiment signals from unstructured
+              transcripts.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>Gemini AI</span><span>Google
+              STT</span><span>FastAPI</span><span>SendGrid</span><span>NLP</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card reveal-up" style="animation-delay: 0.4s;">
+          <div class="project-card-top">
+            <div class="project-type-badge">Mobile / AI / Data Visualisation</div>
+            <a href="https://github.com/MAHIR-BOT-2003" target="_blank" rel="noopener" class="project-github-link"
+              aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <h3 class="project-title">AI-Driven Finance Management App</h3>
+          <p class="project-desc">A cross-platform personal finance application that combines expense tracking and
+            spending visualisation with AI-driven financial insights, built for both Android and iOS using Flutter.</p>
+          <ul class="project-outcomes">
+            <li>Developed cross-platform mobile app with responsive dashboards for real-time expense tracking and
+              category-level analysis.</li>
+            <li>Integrated AI-driven insight engine to surface personalised spending patterns and financial
+              recommendations.</li>
+            <li>Designed analytical visualisations that translate raw transaction data into clear, actionable financial
+              summaries.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Python</span><span>AI/ML</span><span>Data
+              Viz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ OTHER PROJECTS & ARCHIVES ═══════════════ -->
+  <section id="other-projects" class="section other-projects-section" style="padding-top: 0; padding-bottom: 6rem;">
+    <div class="container">
+      <div class="archive-box reveal-up">
+        <div class="archive-content">
+          <h3>Other Projects & Archives</h3>
+          <p>More repositories, experiments, and earlier work.</p>
+        </div>
+        <a href="archive.html" class="btn-archive">
+          View Archive <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">My <span class="accent">Education</span></h2>
+      <div class="section-line reveal-up"></div>
+      <div class="education-card reveal-up">
+        <div class="education-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 3L1 9l11 6 9-4.91V17M5 13.18v4L12 21l7-3.82v-4" />
+          </svg>
+        </div>
+        <div class="education-details">
+          <div class="education-header">
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <span class="education-cgpa">CGPA: <strong>8.90</strong></span>
+          </div>
+          <h4 class="education-institution">Government Engineering College, Jaipur</h4>
+          <p class="education-duration">August 2023 – May 2027 · Full-time</p>
+          <ul class="education-highlights">
+            <li>Specialisation in Machine Learning, Artificial Intelligence, and Data Structures & Algorithms.</li>
+            <li>Consistent high academic performance (CGPA 8.90) alongside active project development and hackathon
+              participation.</li>
+            <li>Built a portfolio of production-oriented ML and mobile development projects while completing 8 industry
+              certifications in parallel.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+  <section id="certifications" class="section certifications-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">My <span class="accent">Certifications</span></h2>
+      <div class="section-line reveal-up"></div>
+      <div class="certs-grid">
+        <div class="cert-card reveal-up" style="animation-delay: 0.05s;"
+          onclick="openModal('Certificates/nvidia_cert.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/nvidia_cert.png" alt="NVIDIA Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider nvidia">NVIDIA</span>
+            <h4>Applications of AI for Anomaly Detection</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.1s;"
+          onclick="openModal('Certificates/standford_cert.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/standford_cert.png" alt="Stanford Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider stanford">Stanford & DeepLearning.AI</span>
+            <h4>Machine Learning Specialization</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.15s;"
+          onclick="openModal('Certificates/cert_google_agents.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/cert_google_agents.png" alt="Google Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider google">Google & Kaggle</span>
+            <h4>5-Day AI Agents Intensive Course</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.2s;"
+          onclick="openModal('Certificates/cert_computer_vision.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/cert_computer_vision.png" alt="LinkedIn Learning CV Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider linkedin">LinkedIn Learning</span>
+            <h4>Building Computer Vision Apps (Python)</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.25s;"
+          onclick="openModal('Certificates/data visul.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/data visul.png" alt="LinkedIn Learning Data Viz Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider linkedin">LinkedIn Learning</span>
+            <h4>Python for Data Visualization</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.3s;"
+          onclick="openModal('Certificates/claude_ai_cert.png')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/claude_ai_cert.png" alt="Anthropic Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider anthropic">Anthropic</span>
+            <h4>AI Fluency: Framework and Foundations</h4>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="animation-delay: 0.35s;"
+          onclick="openModal('Certificates/cert_dart.jpg')">
+          <div class="cert-image-wrapper">
+            <img src="Certificates/cert_dart.jpg" alt="Udemy Dart Certificate" loading="lazy" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-provider udemy">Udemy</span>
+            <h4>The Complete Flutter Development Bootcamp with Dart</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="modal-overlay" id="certModal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <img id="modalImage" src="" alt="Certificate" />
+    </div>
+  </div>
+
+  <!-- ═══════════════ ACHIEVEMENTS ═══════════════ -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Achievements & <span class="accent">Recognition</span></h2>
+      <div class="section-line reveal-up"></div>
+      <p class="section-subtitle reveal-up">Competing and winning at national level — from fraud prevention challenges
+        to AI hackathons at India's top engineering institutions.</p>
+
+      <div class="stats-row reveal-up">
+        <div class="stat-counter">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-counter">
+          <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-counter">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-counter">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Awards</span>
+        </div>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal-up" style="animation-delay: 0.1s;">
+          <div class="achievement-year">2025</div>
+          <div class="achievement-badge">Professional</div>
+          <h3>5th Rank — Sphinx'25 National Hackathon</h3>
+          <h4>MNIT Jaipur</h4>
+          <p>Secured 5th position at Sphinx'25, a national-level hackathon hosted at MNIT Jaipur, competing against
+            teams from across India with an innovative AI-driven solution.</p>
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+        </div>
+        <div class="achievement-card reveal-up" style="animation-delay: 0.2s;">
+          <div class="achievement-year">2025</div>
+          <div class="achievement-badge">Professional</div>
+          <h3>Certificate of Appreciation — MUJ HackX 3.0</h3>
+          <h4>Manipal University Jaipur</h4>
+          <p>Awarded for outstanding technical innovation and rapid prototyping execution at MUJ HackX 3.0, recognised
+            for delivering a working AI prototype under hackathon time constraints.</p>
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+        </div>
+        <div class="achievement-card reveal-up" style="animation-delay: 0.3s;">
+          <div class="achievement-year">2025</div>
+          <div class="achievement-badge">Professional</div>
+          <h3>National Fraud Prevention Challenge (NFPC) — Recognition</h3>
+          <h4>National Fraud Prevention Challenge</h4>
+          <p>Recognised in the NFPC for developing an AI-powered fraud detection solution that demonstrated
+            high-accuracy mule account classification on real financial datasets (0.983 AUC).</p>
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact" class="section contact-section-new">
+    <div class="container">
+      <h2 class="section-title-new reveal-up">Let's <span class="accent">connect.</span></h2>
+
+      <div class="contact-box reveal-up" style="animation-delay: 0.1s;">
+        <div class="contact-box-header">
+          <span class="red-dot"></span> Send a message
+        </div>
+        <form id="contactForm" class="contact-form-new">
+          <div class="form-row">
+            <div class="form-group-new">
+              <label for="fullName">NAME</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your name" required />
+            </div>
+            <div class="form-group-new">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group-new">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or just say hello..."
+              required></textarea>
+          </div>
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn-submit-new">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="16" height="16">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RESUME ═══════════════ -->
+  <section id="resume" class="section resume-section" style="text-align: center; padding: 4rem 0;">
+    <div class="container">
+      <a href="Certificates/Mahir_Makar_Resume.pdf" target="_blank" rel="noopener noreferrer"
+        class="btn-big-resume reveal-up">
+        My Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">MM</span>
+        <h3>Mahir Makar</h3>
+        <p>Building intelligent systems that scale.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/MAHIR-BOT-2003" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mahir-makar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:mahirmakar25@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 Mahir Makar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

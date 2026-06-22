@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive & Other Projects — Mahir Makar</title>
+  <meta name="description" content="Archive of other projects, repositories, and earlier work by Mahir Makar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="navbar" class="navbar">
+    <a href="index.html" class="nav-logo">mahir makar</a>
+    <div style="margin-left: auto;">
+      <a href="index.html" class="nav-link" style="color: #fff;">&larr; Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ ARCHIVE GRID ═══════════════ -->
+  <section class="section" style="padding-top: 150px; min-height: 100vh;">
+    <div class="container">
+      <h1 class="section-title reveal-up" style="font-size: 3rem; margin-bottom: 10px;">Project <span class="accent">Archive</span></h1>
+      <p class="section-subtitle reveal-up" style="margin-bottom: 50px;">More repositories, experiments, and earlier work.</p>
+      
+      <div class="archive-grid">
+        <!-- Project 1 -->
+        <a href="https://github.com/Mahir-bot-2003/simple-shell-python" target="_blank" rel="noopener" class="archive-card reveal-up">
+          <div class="archive-card-top">
+            <h4>Promptshell</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </div>
+          <p>A Unix-like command-line interpreter built entirely in Python, replicating core terminal behavior including command parsing, process management, and I/O redirection. Features a hybrid Natural Language Engine that translates plain English queries into shell commands.</p>
+          <div class="archive-tech"><span>Python</span><span>subprocess</span><span>shlex</span><span>Gemini AI</span></div>
+        </a>
+        
+        <!-- Project 2 -->
+        <a href="https://github.com/Mahir-bot-2003/EDA-Mule-Detection" target="_blank" rel="noopener" class="archive-card reveal-up" style="animation-delay: 0.1s;">
+          <div class="archive-card-top">
+            <h4>EDA for Mule Account Detection</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </div>
+          <p>Exploratory Data Analysis pipeline for detecting mule accounts across multi-table financial datasets. Features time-series analysis detecting dormant-to-active transitions and network analysis identifying circular money flows.</p>
+          <div class="archive-tech"><span>Pandas</span><span>Scikit-learn</span><span>Seaborn</span><span>Matplotlib</span></div>
+        </a>
+        
+        <!-- Project 3 -->
+        <a href="https://github.com/Mahir-bot-2003/KRITI-AI" target="_blank" rel="noopener" class="archive-card reveal-up" style="animation-delay: 0.2s;">
+          <div class="archive-card-top">
+            <h4>Kriti AI — Voice Concierge</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </div>
+          <p>Enterprise-grade AI voice concierge for hospitality. Handles end-to-end hotel and restaurant reservations through real-time multilingual voice conversations with sub-400ms latency, dynamic pricing negotiation, and automated SMS confirmations.</p>
+          <div class="archive-tech"><span>LiveKit</span><span>Gemini 2.5</span><span>Twilio</span><span>Flask</span></div>
+        </a>
+        
+        <!-- Project 4 -->
+        <a href="https://github.com/Mahir-bot-2003/Medical-insurance" target="_blank" rel="noopener" class="archive-card reveal-up" style="animation-delay: 0.3s;">
+          <div class="archive-card-top">
+            <h4>Medical Insurance Predictor</h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </div>
+          <p>End-to-end ML system that predicts annual medical insurance charges from personal health attributes. Deployed as a production-style application with a REST API backend and an interactive Streamlit frontend with dynamic risk badges.</p>
+          <div class="archive-tech"><span>FastAPI</span><span>Streamlit</span><span>Joblib</span><span>Scikit-learn</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Canvas Particles logic without scroll reveals for this page -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const reveals = document.querySelectorAll(".reveal-up");
+      reveals.forEach(el => el.classList.add("revealed"));
+    });
+  </script>
+</body>
+</html>
